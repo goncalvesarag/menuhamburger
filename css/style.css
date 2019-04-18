@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    display: grid;
+    grid-template-areas: 'header header header';
+    grid-template-rows: 10vh;
+}
+
+nav{
+    grid-area: header;
+    background-color: rgb(3, 3, 5);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 20pt;
+    
+    
+
+}
+
+nav a{
+    text-decoration: none;
+    color: rgba(182, 99, 21, 0.747);
+}
+
+
+nav div span .menuHamburger{
+    display: none;
+    justify-content: space-around;
+    height: 25px;
+    width: 30px;
+    flex-direction: column;
+}
+
+nav div span{
+    width: 100px;
+    height: 3px;
+    background-color: aliceblue;
+    border-radius: 40px;
+}
+
+/* TABLET */
+
+@media (max-width: 768px){
+    nav a{
+        display: none;
+    }
+    .menuHamburger{
+        display: flex;
+    }
+}
